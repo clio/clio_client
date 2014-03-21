@@ -40,6 +40,10 @@ module ClioClient
     has_association :flat_rate_activity,       ClioClient::Rate
     has_association :flat_rate_activity_description, ClioClient::ActivityDescription
 
-  end
+    private
+    def api
+      session.matters
+    end
 
+  end
 end
