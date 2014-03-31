@@ -32,6 +32,7 @@ Or install it yourself as:
 
 You will need to do a few things before you can get started with Clio and the API. For convience, this information is pulled directly from Clio's API documentation at the top.
 
+Sample application using the library: https://github.com/themis/clio-api-demos
 
 ### Create a Clio Account
 
@@ -64,6 +65,10 @@ client.authorized?
 ```
 
 At this point the client is ready to use. You will need to save the `access_token` for future use. 
+
+```
+client.access_token = access_token
+````
 
 There are many different end points you can now interact with. They all act mostly the same. 
 
