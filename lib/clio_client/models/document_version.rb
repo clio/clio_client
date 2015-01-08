@@ -12,6 +12,8 @@ module ClioClient
                    filename:      {type: :string}
                    )
 
+    has_many_association :document_version_notes,           ClioClient::DocumentVersionNote
+    
     def download
       api.download(id)
     end

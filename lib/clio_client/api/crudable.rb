@@ -23,9 +23,9 @@ module ClioClient
         end
       end
 
-      def destroy(id)
+      def destroy(id, params = {})
         begin
-          session.delete("#{end_point_url}/#{id}", false)
+          session.delete("#{end_point_url}/#{id}", params, false)
         rescue ClioClient::UnknownResponse
           false
         end

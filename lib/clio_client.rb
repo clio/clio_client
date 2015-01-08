@@ -67,6 +67,7 @@ module ClioClient
     :CustomFieldTextAreaValue => 'custom_field_text_area_value',
     :CustomFieldTextLineValue => 'custom_field_text_line_value',
     :CustomFieldUrlValue =>      'custom_field_url_value',
+    :DocumentVersionNote =>      'document_version_note',
     :Rate =>                     'rate',
     :Reminder =>                 'reminder'
   }.each_pair do |klass, file| 

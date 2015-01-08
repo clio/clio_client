@@ -8,7 +8,8 @@ module ClioClient
                    maildrop_address:  {type: :string},
                    name:              {type: :string, readonly: true},
                    date_format:       {type: :string, readonly: true},
-                   time_format:       {type: :string, readonly: true}
+                   time_format:       {type: :string, readonly: true},
+                   document_preview_enabled: {type: :boolean, readonly: true}
                    )
     
     has_association :owner, ClioClient::User

@@ -42,8 +42,8 @@ module ClioClient
       make_api_request(req, uri, parse)
     end
 
-    def delete(path, parse=true)
-      uri = base_uri("#{api_prefix}/#{path}")
+    def delete(path, params = {}, parse=true)
+      uri = base_uri("#{api_prefix}/#{path}", params)
       req = Net::HTTP::Delete.new(uri.request_uri)
       make_api_request(req, uri, parse)
     end
