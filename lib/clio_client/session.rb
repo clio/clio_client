@@ -35,6 +35,7 @@ module ClioClient
       practice_areas:             ClioClient::Api::PracticeArea,
       relationships:              ClioClient::Api::Relationship,
       tasks:                      ClioClient::Api::Task,
+      task_types:                 ClioClient::Api::TaskType,
       timeline_events:            ClioClient::Api::TimelineEvent,
       timer:                      ClioClient::Api::Timer,
       users:                      ClioClient::Api::User

@@ -2,13 +2,13 @@ require 'net/http'
 require 'json'
 
 module ClioClient
-  
+
   { :Session =>       'session',
     :Base =>          'base',
     :Resource =>      'resource',
     :Http =>          'http',
     :Authorization => 'authorization'
-  }.each_pair do |klass, file| 
+  }.each_pair do |klass, file|
     autoload klass, "clio_client/#{file}"
   end
 
@@ -40,10 +40,11 @@ module ClioClient
     :TimeEntry =>               'time_entry',
     :Relationship =>            'relationship',
     :Task =>                    'task',
+    :TaskType =>                'task_type',
     :TimelineEvent =>           'timeline_event',
     :Timer =>                   'timer',
     :User =>                    'user'
-  }.each_pair do |klass, file| 
+  }.each_pair do |klass, file|
     autoload klass, "clio_client/models/#{file}"
   end
 
@@ -70,7 +71,7 @@ module ClioClient
     :DocumentVersionNote =>      'document_version_note',
     :Rate =>                     'rate',
     :Reminder =>                 'reminder'
-  }.each_pair do |klass, file| 
+  }.each_pair do |klass, file|
     autoload klass, "clio_client/support/#{file}"
   end
 
@@ -85,7 +86,7 @@ module ClioClient
       :ClientConnectPermission => 'client_connect_permission',
       :Communication =>           'communication',
       :Contact =>                 'contact',
-      :CustomFieldSet =>          'custom_field_set',    
+      :CustomFieldSet =>          'custom_field_set',
       :CustomField =>             'custom_field',
       :DocumentCategory =>        'document_category',
       :DocumentVersion =>         'document_version',
@@ -96,6 +97,7 @@ module ClioClient
       :PracticeArea =>            'practice_area',
       :Relationship =>            'relationship',
       :Task =>                    'task',
+      :TaskType =>                'task_type',
       :TimelineEvent =>           'timeline_event',
       :Timer =>                   'timer',
       :User =>                    'user',
@@ -103,7 +105,7 @@ module ClioClient
       :Crudable =>          'crudable',
       :Findable =>          'findable',
       :Listable =>          'listable'
-    }.each_pair do |klass, file| 
+    }.each_pair do |klass, file|
       autoload klass, "clio_client/api/#{file}"
     end
 
