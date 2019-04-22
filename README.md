@@ -1,3 +1,5 @@
+# WARNING: Clio API v2 and this gem is no longer active/supported.
+
 # ClioClient
 
 This is an API client for Clio V2.
